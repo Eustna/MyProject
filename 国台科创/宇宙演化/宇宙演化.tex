@@ -1,0 +1,1425 @@
+\documentclass[8pt]{beamer}
+\usetheme{Madrid}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage[english]{babel}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{ctex}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{animate}
+
+
+\begin{document}
+    \title[宇宙演化]{宇宙演化}
+    \author[左毅]{左毅} 
+    \date{\today}  
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\section[目录]{}
+    \frame {
+        \frametitle{\secname}
+        \tableofcontents
+    }
+
+
+\AtBeginSubsection[] {
+    \frame<handout:0> {
+        \tableofcontents[current,currentsubsection]
+    }
+}
+
+\section{宇宙学理论}
+    \subsection{1.1 现代宇宙学的三大基石}
+        \begin{frame}[fragile]
+            \frametitle{星系整体退行}
+            \framesubtitle{Hubble膨胀}
+            \begin{multicols}{2}
+                \qquad
+                1912年，
+                Slipher首先发现M13星云的谱线产生了红外平移，
+                随后的10年内，
+                在经历了其他观测后，
+                他发现这并非为偶然现象。
+                当时，有些理论物理学家意识到
+                若理解为这种谱线红移的现象是由Doppler效应导致的，
+                且各方向的大多数星系都有这种红移现象，
+                那么意味着星系整体在发生退行，
+                这是宇宙正在膨胀的迹象。
+
+                \qquad
+                直到1929年，
+                Hubble观测了24个临近星系，
+                发现其移动速度与其距离有线性关系
+                $$v=H_0d$$
+                \qquad
+                该关系称之为Hubble定律，
+                虽然这是一个唯象模型，
+                但是在宇宙学原理建立后，
+                我们可以通过\hyperlink{附录1}{\underline{红移}}推出这个关系。
+                \begin{figure}[h]
+                    \centering  
+                    \includegraphics[width=1\linewidth]{原始的Hubble图.png}  
+                    \caption{Hubble的原始观测数据，拟合的直线很明显地展示了这种线性关系}  
+                \end{figure}
+                
+            \end{multicols}
+        \end{frame}
+
+        \begin{frame}[fragile]
+            \frametitle{宇宙微波背景辐射}
+            \framesubtitle{背景辐射}
+
+            \begin{multicols}{2}
+                \qquad
+                由Hubble定律我们能很自然地猜想，
+                如果宇宙是一直在膨胀的，
+                那一定时间之前，
+                宇宙会处于一个很小的尺度，
+                我们可以说这是宇宙的开始，
+                称之为大爆炸。
+                
+                \qquad
+                大爆炸发生后的几分钟内，
+                第一个原子核会形成，
+                电子在“热汤”中高速运动，
+                以至于原子核无法捕获电子，
+                难以形成稳定的原子。
+                这时候的宇宙充斥着等离子体，
+                光子会频繁地和电子碰撞，
+                传播不了很远，
+                导致宇宙并不透明，
+                我们无法直接观测。
+                
+                \qquad
+                经过了大约38万年后，
+                宇宙冷却了下来，
+                电子慢到能被捕获形成稳定的原子。
+                此时光才能在宇宙中自由地传播，
+                宇宙这时候也变得透明了。
+                
+                \qquad
+                同时，
+                早期电子会因为大量高能辐射而保持高速运动，
+                等电子和原子核形成了稳定结构后，
+                这些高能辐射不再能使得电子逃逸出原子核的束缚，
+                无法与原子发生相互作用，
+                因此就潜伏在了宇宙背景之中。
+
+                \qquad
+                1964年，
+                Penzias和Wilson在新泽西州利用天线接受到了来自天空的无线电噪声，
+                观测到了背景辐射，
+                从而宇宙微波背景辐射得到了验证，
+                同时宇宙微波背景辐射的测量还表示了宇宙早期的高温介质是各向同性的，
+                这为宇宙学基本原理提供了有力的基础。
+
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=1\linewidth]{宇宙微波背景辐射.png}  
+                    \caption{宇宙微波背景辐射}
+                \end{figure}
+            \end{multicols}
+        \end{frame}
+
+        \begin{frame}[fragile]
+            \frametitle{轻元素的合成}
+            \framesubtitle{He的丰度}
+            \begin{multicols}{2} 
+                \qquad
+                在微波背景辐射发现的同时，
+                人们同时也注意到，
+                He元素的丰度测量不论在宇宙什么天体中，
+                其值都在24\%左右，
+                这一值远远超出了恒星内部热核反应所能提供的He丰度，
+                而大爆炸的热历史正好提供了轻元素自然产生与结束的环境。
+
+                \qquad
+                1964年，
+                Hoyle和Tayler根据热演化史的计算表明：
+                由大爆炸的核合成理论所产生的He丰度为23\%到25\%。
+                随后，
+                Wagoner、Fowler和Hoyler又给出了其他轻元素的丰度。
+                由于大爆炸的核合成理论产生的轻元素丰度与位置无关，
+                故而自然解释了最初的He丰度测量。
+                大爆炸核合成理论预言与实测的吻合，
+                充分标志着热大爆炸理论的成功。
+
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=1\linewidth]{He丰度表.png}  
+                    \caption{典型星系的He丰度}
+                \end{figure}
+            \end{multicols}
+        \end{frame}
+
+    \subsection{1.2 标准宇宙学}
+        \begin{frame}[fragile]
+            \frametitle{宇宙学原理}
+            \framesubtitle{Robertson-Walker度规}
+            \begin{multicols}{2} 
+                \qquad
+                现代宇宙学的研究是基于宇宙学原理和广义相对论发展的，
+                \hyperlink{附录3}{\underline{广义相对论}}中的场方程描绘的是物质能量分布和时空的关系，
+                也就是能动张量和度规张量的函数关系。
+                如果我们能给定一个度规，
+                那么我们就能确定物质的分布，
+                而如果我们给定了一个按照一定规律含时变化的度规，
+                那么我们就能得到宇宙的演化。
+                
+                \qquad
+                这个规律对于我们而言并不是反直觉的，
+                我们完全可以接受一个宇宙是大尺度均匀且各向同性的。
+                而这一假设被宇宙微波背景辐射所证实为有效的，
+                且基于这一大尺度均匀且各向同性的要求，
+                在之后的宇宙学研究中也发现得到的结果能很好地符合观测的结果，
+                \hyperlink{附录1}{\underline{Hubble定律的推导}}就表现出了这点。
+
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=1\linewidth]{对称性.png}  
+                    \caption{均匀性和各向同性可以表述为空间平移对称性和空间旋转对称性，
+                    本图就很好地展示了这一点，在大尺度上平移对称性尤为明显}
+                \end{figure}
+            \end{multicols}
+        \end{frame}
+
+        \begin{frame}[fragile]
+            \frametitle{宇宙学原理}
+            \framesubtitle{Robertson-Walker度规}
+                \qquad
+                宇宙学原理对时空结构进行了很强的约束，
+                我们可以推导出最后满足原理的度规必然要满足
+                $$g_{\mu\nu}dx^{\mu}dx^{\nu}=dt^2-a^2(t)\bigg[\frac{dr^2}{1-kr^2}+r^2d\theta^2+r^2sin^2\theta d\varphi^2\bigg]$$
+                其中的$g_{\mu\nu}$就是Robertson-Walker度规。
+
+                \qquad
+                当我们$k=0$时，
+                Robertson-Walker度规满足
+                $$ds^2=dt^2-a^2(t)\bigg[dr^2+r^2d\theta^2+r^2sin^2\theta d\varphi^2\bigg]$$
+                而这在空间部分就是球坐标系下的欧式度规乘上了一个膨胀因子，
+                这意味着$k=0$时宇宙是平坦的。
+
+                \qquad
+                在$k=1$时，
+                \hyperlink{附录4}{\underline{Robertson-Walker度规}}的空间部分表现为三维球面乘上膨胀因子的形式，
+                这意味着宇宙是封闭的一个球体，
+                具体可以看\hyperlink{附录2}{\underline{Robertson-Walker度规的推导}}。
+
+                \qquad
+                而$k=-1$表现为一个马鞍面，
+                说明了宇宙是开放的。
+        \end{frame}
+
+        \begin{frame}[fragile]
+            \frametitle{宇宙学原理}
+            \framesubtitle{Robertson-Walker度规}
+            \begin{multicols}{2}
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=1\linewidth]{三种宇宙2.png}  
+                    \caption{这张图显示的是k在不同取值时$a(t)$的函数图像}
+                \end{figure}
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=1\linewidth]{三种宇宙.png}  
+                    \caption{这张图表现了三种不同k取值状态的二维宇宙结构，
+                    球面宇宙是封闭的，
+                    而马鞍面宇宙是开放的}
+                \end{figure}
+            \end{multicols}
+            
+        \end{frame}
+
+
+        \begin{frame}[fragile]
+            \frametitle{标准宇宙学模型}
+            \framesubtitle{Friedmann方程}
+            \begin{multicols}{2} 
+                \qquad
+                在\hyperlink{附录2}{\underline{Robertson-Walker度规的推导}}的推导中，
+                我们将球面半径替换成了膨胀因子，
+                也为其添加了含时的变化，
+                但是含时变化的具体方式我们并不清楚，
+                这意味着Robertson-Walker度规依然具有一定的不确定性，
+                为了消去这种不确定性，
+                得到Friedmann方程，
+                也就是膨胀因子和时间的具体关系，
+                我们需要继续用\hyperlink{附录3}{\underline{Einstein场方程}}作为桥梁，
+                从能动张量出发反推度规。
+
+                \qquad
+                最终我们得到的关系是
+                $$\biggl(\frac{\dot{a}(t)}{a(t)}\biggr)^2=\frac{\kappa }{3}\rho -\frac{k}{a^2(t)}$$
+                和
+                $$\ddot{a}(t)=-\frac{\kappa}{6}(\rho+3P)a(t)$$
+                第一项就是Friedmann方程。
+
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=1\linewidth]{弗里德方程.png}  
+                    \caption{决定宇宙膨胀的三个关系}
+                \end{figure}
+
+            \end{multicols}
+        \end{frame}
+
+        \begin{frame}[fragile]
+            \frametitle{标准宇宙学模型}
+            \framesubtitle{宇宙学基本参量}
+            \begin{multicols}{2} 
+                \qquad
+                在Hubble定理那里我们有给出过一个Hubble常量$H_0$,
+                这个量描述了当前宇宙膨胀的速率，
+                因此也应该和膨胀系数有关。
+                我们可以定义宇宙膨胀速率
+                $$H(t)\equiv\frac{\dot{a}(t)}{a(t)}$$
+                这样$H_0$就表示为
+                $$H_0=H(t_0)=\frac{\dot{a}(t_0)}{a(t_0)}$$
+                Friedmann方程也可以改写为
+                $$H^2(t)=\frac{\kappa }{3}\rho -\frac{k}{a^2(t)}$$
+                此时如果我们将$H^2$除下去，
+                我们能得到
+                $$1=\frac{\rho}{\rho_c} -\frac{k}{a^2H^2}$$
+                其中$\rho_c\equiv\frac{3H^2}{\kappa }$称之为临界密度。
+                同时可以更简单地记为
+                $$1=\Omega_M(t)+\Omega_k(t)$$
+                其中
+                $$
+                \begin{cases} 
+                    \Omega_M(t)=\frac{\rho}{\rho_c}\\ 
+                    \Omega_k(t)=-\frac{k}{a^2H^2}\\
+                \end{cases}
+                $$
+
+                \qquad
+                最后这里再给出一个减速参数$q$,
+                它的定义是
+                $$q(t)\equiv -\frac{\ddot{a}(t)a(t)}{\dot{a}(t)}$$
+                现在的减速参数$$q_0=q(t_0)$$
+            \end{multicols}
+        \end{frame}
+    
+    \subsection{1.3 宇宙学模型的运用}
+        \begin{frame}[fragile]
+            \frametitle{宇宙学红移}
+            \framesubtitle{宇宙学红移和视界}
+            \begin{multicols}{2} 
+                \qquad
+                由Robertson-Walker度规，
+                我们可以得到\hyperlink{附录}{\underline{红移的具体形式}}
+                $$1+z=\frac{a(t_0)}{a(t_1)}$$
+                我们取当前的膨胀因子为1则
+                $$z=\frac{1}{a(t)}-1\qquad t<t_0$$
+                这显然表示了宇宙学红移是和宇宙的膨胀有关，
+                这里的$t$表示光子发射的时间。
+
+                \qquad
+                当$a(t)$表现为负相关时，
+                $z<0$意味着宇宙在发生收缩，
+                而当$a(t)$表现为正相关时，
+                $z>0$表明宇宙正在膨胀，
+                而$a$不与时间相关时，
+                宇宙是静态的。
+                同时我们也能发现，
+                当宇宙正在膨胀时，
+                光子发射的越早，
+                距离我们越远，
+                红移也就越明显。
+
+                \qquad
+                与宇宙学红移相关的还有一个概念是宇宙学视界，
+                这一视界定义为使得光子波长的红移为无穷大的位置，
+                视界的大小我们可以如此去求$$D_h(t)=ca(t)\int_0^r \,\frac{dt'}{a(t')}$$
+                这表明其变化的规律取决于$a(t)$的具体形式，
+                而我们计算下视界膨胀的速度可以发现
+                $$\frac{d}{dt}D_h=H(t)D_h+c$$
+
+                \qquad
+                由Hubble定律我们可以知道其中的$HD_h$是视界处星系的退行速度，
+                这意味着视界的膨胀速度比视界处星系的退行速度还要多出来一个光速，
+                随着我们视界的膨胀，
+                越来越多的星系会出现在我们的视界之中。
+            \end{multicols}
+        \end{frame}
+
+        \begin{frame}[fragile]
+            \frametitle{宇宙的年龄}
+            \framesubtitle{宇宙年龄的计算}
+            \begin{multicols}{2} 
+                \qquad
+                在具体计算宇宙年龄之前我们需要首先考虑下影响宇宙膨胀的要素之一，
+                也就是物质密度包含了几种物质。
+                在我们得到Friedmann方程方程时，
+                我们有得到另一个式子
+                $$\ddot{a}(t)=-\frac{\kappa}{6}(\rho+3P)a(t)$$
+                通过这一方程，
+                我们可以通过物态方程$P=w\rho$得到
+                $$\rho\varpropto a^{-3(1+w)}$$
+                
+                \qquad
+                这意味着得到3种极端情况下$\rho$的演化规律。
+                \begin{itemize}
+                    \item 1 冷物质(星际尘埃):$$P=0\Rightarrow\rho\varpropto a^{-3}$$
+                    \item 2 热物质(辐射):$$P=\frac{\rho}{3}\Rightarrow\rho\varpropto a^{-4}$$
+                    \item 3 真空能量:$$P=-\rho\Rightarrow\rho=const$$
+                \end{itemize}
+                这样我们就能根据这三种物质将物质密度拆为
+                $$\rho=\rho_m+\rho_r+\rho_{\varLambda }$$
+                而我们知道其演化规律，
+                自然可以写为$$\rho=\frac{\rho_{m0}}{a^3}+\frac{\rho_{r0}}{a^4}+\rho_{\varLambda }$$
+                接着可以定义
+                $$
+                \begin{cases} 
+                    \Omega_m=\frac{\rho_{m0}}{\rho_c}\\ 
+                    \Omega_r=\frac{\rho_{r0}}{\rho_c}\\
+                    \Omega_{\varLambda }=\frac{\rho_{\varLambda}}{\rho_c}\\
+                \end{cases}
+                $$
+                这样Friedmann方程就能改写为
+                $$dt=\frac{da}{H_0a\sqrt{\Omega_{\varLambda }+\Omega_{k}a^{-2}+\Omega_{m}a^{-3}+\Omega_{r}a^{-4}}}$$
+                我们对$a$做0到1的积分就有宇宙的年龄。
+            \end{multicols}
+        \end{frame}
+
+        \begin{equation}
+            A^i=\sum_j D^i_j B_j
+        \end{equation}
+
+
+
+\section{宇宙的演化}
+    \subsection{2.1 宇宙热历史}
+        \begin{frame}[fragile]
+            \frametitle{Planck时期}
+            \framesubtitle{$t\thicksim10^{-43}s,T\thicksim10^{32}K$}
+            \begin{multicols}{2} 
+                \qquad
+                在现代宇宙学看来， 
+                大爆炸之前是充满了量子涨落的真空，
+                蕴含了巨大的潜能，
+                而今天的宇宙就是源自于一百多亿年前对的一次真空量子涨落。
+                而真空涨落源于时间能量的不确定关系，
+                通过某种不同方式构造的等效的时间算符无法和H对易，
+                当我们在一个很小的时间内测量能量，
+                能量的不确定性也就越大。
+
+                \qquad
+                宇宙大爆炸就是一次$t\to 0,E\to \infty$的巨大真空潜能的释放，
+                在此之后，
+                时空和物质创生了，
+                而在此之前，
+                宇宙处于量子混沌状态，
+                不存在连续的时空，
+                只有在普朗克时间之后
+                时空具有了确定的拓扑结构。
+
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=1\linewidth]{量子涨落.png}  
+                    \caption{量子涨落示意图}
+                \end{figure}
+            \end{multicols}
+        \end{frame}
+
+
+        \begin{frame}[fragile]
+            \frametitle{宇宙暴胀}
+            \framesubtitle{$t\thicksim 10^{-33}s,T\thicksim10^{26}K$}
+            \begin{multicols}{2} 
+                \qquad
+                在标准宇宙学模型中，
+                存在两个问题没有解决，
+                分别是平性和视界。
+
+                \qquad
+                原初大爆炸时宇宙的密度和Hubble常数应该是两个互相独立的随机变量，
+                但二者给出的组合变量却精妙地等于1，
+                这在概率上而言是难以理解的，
+                这种不可思议的巧合意味着宇宙从开始到现在都是平直的，
+                这也就是标准宇宙学的平性疑难。
+
+                \qquad
+                而视界疑难源自观测到的宇宙微波背景辐射的高度均匀和各向同性，
+                这说明在不同方向上距离极其遥远的两点之间也存在因果关系，
+                而这也就意味着我们今天看到的全部宇宙，
+                在历史上都曾处于同一个有因果联系的区域。
+
+                \qquad
+                为了解决这两个问题，
+                人们提出了暴涨模型，
+                通过添加一个标量场使得宇宙能在极短暂的时间内膨胀$10^{43}$倍，
+                这解释了平性和视界的问题。
+                而这一时期也称之为宇宙的暴胀。
+
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=1\linewidth]{暴胀.png}  
+                    \caption{宇宙演化历史}
+                \end{figure}
+
+
+            \end{multicols}
+        \end{frame}
+
+
+
+        \begin{frame}[fragile]
+            \frametitle{强子时期和轻子时期}
+            \framesubtitle{$T\thicksim 10^{13}-10^{10}K$}
+            \begin{multicols}{2} 
+                \qquad
+                暴胀结束后，
+                强相互作用和弱电相互作用脱离耦合状态，
+                宇宙介质回到辐射主导，
+                重新按照正常的规律膨胀。
+                随着宇宙温度不断下降，
+                在$T=10^{15}K$时，
+                弱作用和电磁相互作用也脱离了耦合，
+                从此四种基本作用力分离开来。
+                当宇宙温度下降到$T=10^{13}K$时，
+                夸克到强子的转变发生，
+                自由夸克和胶子都被束缚在强子之中，
+                这一时期也称之为强子时期，
+                宇宙中的物质主要是处于热平衡状态的下的光子、轻子、介子和核子及其反粒子。
+                随着宇宙温度继续下降到$T=10^{12}K$，
+                绝大部分核子发生湮灭，
+                中微子和其他粒子退耦，
+                成为只有粒子，
+                并与辐射和正负粒子一起与残存的核子处于热平衡，
+                这一时期称之为轻子时期，
+                温度持续到大约$T=10^{10}K$，
+                而在之后便是轻元素核的合成，
+                这些都只发生在大爆炸之后的大约3分钟内。
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=1\linewidth]{基本粒子.png}  
+                    \caption{粒子物理标准模型中的基本粒子}
+                \end{figure}
+            \end{multicols}
+        \end{frame}
+
+
+        \begin{frame}[fragile]
+            \frametitle{复合时期}
+            \framesubtitle{$T\thicksim 4000-3000K$}
+            \begin{multicols}{2} 
+                \qquad
+                早期核合成后大约经过几万年，
+                光子、中微子等相对论性粒子的能量密度下降到以H和He原子核为主的非相对论性物质的能量密度以下时，
+                宇宙由以辐射为主进入到物质为主的阶段。
+                此时的物质处于电离状态，
+                宇宙中充斥着等离子体，
+                但在强大的辐射压力的驱散下，
+                各种物质粒子均匀地分布在空间中。
+
+                \qquad
+                当宇宙年龄大约为30万年时，
+                温度下降到4000K以下，
+                此时差不多所有的自由电子都被结合进原子之中，
+                辐射和物质之间不再具有耦合，
+                形成了弥散在宇宙中的背景辐射，
+                这也就是复合时期。
+
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=1\linewidth]{粒子对撞.png}  
+                    \caption{粒子对撞实验，在某种意义上算一种时间的倒流，用磁场替代高能辐射给粒子提供能量，让他们回到宇宙早期的“热汤”状态}
+                \end{figure}
+            \end{multicols}
+        \end{frame}
+        
+        \begin{frame}[fragile]
+            \frametitle{星系形成}
+            \framesubtitle{$T\leqslant 100K$}
+            \begin{multicols}{2} 
+                \qquad
+                物质粒子与辐射退耦后，
+                由于引力作用相互聚集成团，
+                这种成团过程不断发展，
+                就形成了越来越大的原始星云。
+                大概在宇宙温度降到了$T\leqslant 100K$时，
+                宇宙中的第一代天体开始形成，
+                此后，
+                便开始了星系形成的漫长演化。
+
+                \qquad
+                星系是宇宙极早期产生的微小的密度扰动，
+                经过引力凝聚而逐渐发展的，
+                宇宙学原理和背景辐射虽然告诉我们宇宙在大尺度上是均匀的，
+                但是微观状态下是存在不均匀性的，
+                这种微小的不均匀性是原初宇宙留下来的，
+                也是后续宇宙大尺度结构所必须的种子。
+
+                \qquad
+                密度扰动增加到非线性阶段，
+                物质发生坍缩形成第一代天体。
+                许多星系和类星体形成于$1\leqslant z\leqslant6$，
+                而最早的天体形成于$20\leqslant z\leqslant30$，
+                但对于$10\leqslant z\leqslant1000$，
+                现在常常称之为宇宙的黑暗时代，
+                在此期间没有观测到任何发光的天体，
+                因此具体发什么什么我们并不知道。
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=1\linewidth]{SDSS.png}  
+                    \caption{SDSS所记录的关于宇宙结构的图片}
+                \end{figure}
+            \end{multicols}
+        \end{frame}
+    
+    \subsection{2.2 宇宙大尺度结构}
+        \begin{frame}[fragile]
+            \frametitle{宇宙中的暗物质}
+            \framesubtitle{暗物质存在的证据}
+            \begin{multicols}{2} 
+                \qquad
+                大量不可视物质的存在是Zwicky于1937年首先从星系团中发现的，
+                后来关于星系旋转曲线的测量吧星系置于了一个巨大的暗物质晕之中，
+                人们推测宇宙中有90\%以上的物质是不可发光的暗物质，
+                因此暗物质决定了宇宙大尺度结构、星系团以及星系的形成、演化和命运，
+                大尺度结构的形成问题主要是关于不同暗物质属性的讨论。
+
+                \qquad
+                天文学中最直观暗物质存在的证据是自旋涡星系旋转曲线的测量，
+                为了和观测符合，
+                计算中需要有一种不发光的物质贡献其引力作用，
+                从而引进了一个“暗”物质晕来维持，
+                而对星系周围卫星星系以及球状星团的潮汐力的测量进一步支持了星系暗晕。
+
+                \qquad
+                另一项独立的证据来自对于星系团和星系群中的星系分布和速度弥散的研究，
+                如果要保证星系和星系团中其总的引力势要达到位力平衡，
+                那么实际需要的质量比所观测得到的要高出两个数量级，
+                这也暗示了暗物质的存在。
+
+                \qquad
+                而星系团中最有力的证据还是引力透镜的研究，
+                星系团是宇宙中最大的引力束缚体系，
+                它能让来自背景的光线发生引力偏折，
+                通过研究这些偏折，
+                我们能准确地得到星系团的质量和物质分布，
+                而这项研究得到的计算结果，
+                也直接支持了暗物质的存在。
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=1\linewidth]{引力透镜.png}  
+                    \caption{物质告诉时空如何扭曲，时空告诉物质如何运动，大质量天体会扭曲经过的光线，表现为一张凸透镜一样}
+                \end{figure}
+            \end{multicols}
+        \end{frame}
+
+
+        \begin{frame}[fragile]
+            \frametitle{密度扰动的线性演化}
+            \framesubtitle{简介和基础推导}
+            \begin{multicols}{2} 
+                \qquad
+                对于宇宙大尺度结构的形成，
+                主流的基本思想是引力不稳定性，
+                原初微小的密度涨落在引力作用下逐渐放大形成结构。
+                引力不稳定性的思想最早可追溯到Newton，
+                而具体运用在1901年由Jeans开创，
+                当扰动增加到一定程度，
+                动力学行为变为非线性，
+                这时候只能用半解析和数值模拟的办法，
+                因此非线性内容则是在近20年才发展起来的。
+
+                \qquad
+                首先介绍Jeans理论，
+                其出发点是流体力学，
+                $\rho$代表流体密度，
+                $P$代表压强，
+                $v$代表局域速度以及$\phi$代表引力势，
+                而作为这些物理量关联的分别是流守恒方程、Eular动力学方程和Poisson方程。
+                $$\frac{\partial\rho}{\partial t}+\nabla\cdot (\rho\textbf{v})=0$$
+                $$\frac{\partial \textbf{v}}{\partial t}+(\textbf{v}\cdot\nabla)\textbf{v}+\frac{1}{\rho}\nabla P-\nabla\phi=0$$
+                $$\nabla^2\phi=4\pi G\rho$$
+                
+                \qquad
+                对于这三个方程，
+                我们可以得到一个最简单的解便是静态均匀流体的情况，
+                在这种情况下$\rho=const=\rho_0$、$P=const=P_0$、$v=0$以及$\phi=const=\phi_0$。
+                我们基于这种情况可以添加微扰，
+                即认为
+                $$\rho=\rho_0+\rho_1$$
+                $$P=P_0+P_1$$
+                $$v=0+v_1$$
+                $$\phi=\phi_0+\phi_1$$
+                运用微扰论的内容，
+                将上述带微扰的物理量代入三个方程中联立，
+                随后我们引入密度反差
+                $$\delta(\textbf{r},t)\equiv \frac{\rho_1}{\rho_0}$$
+                表示为静态均匀流体的流体密度和微扰项的比值。
+                在忽略二阶小量的情况下我们能得到
+                $$(\frac{\partial^2}{\partial t^2} -c_s^2\nabla^2-\frac{\kappa\rho_0}{2})\delta(\textbf{r},t)=0 $$
+                其中$c_s^2\equiv\frac{\partial P}{\partial \rho}$表示为介质中的声速。
+
+            \end{multicols}
+        \end{frame}
+
+        \begin{frame}[fragile]
+            \frametitle{密度扰动的线性演化}
+            \framesubtitle{解释与说明}
+            \begin{multicols}{2} 
+                \qquad
+                在之前的推导中，
+                我们得到了密度反差$\delta$的运动方程，
+                接下来我们对其进行求解，
+                可以运用Fourier变换(其实也就是用Fourier级数进行展开方便进行计算，类似于Taylor展开)
+                $$\delta(\textbf{r},t)=\int\,\frac{d^3k}{(2\pi)^3}\delta_k(t)e^{-i\textbf{k}\cdot\textbf{r}}$$
+                将这项代入密度反差的运动方程我们可以得到
+                $$\ddot{\delta}_k+\omega^2\delta_k=0$$
+                其中$\omega=\sqrt{c^2 _sk^2-\frac{\kappa\rho_0}{2}}$
+
+                \qquad
+                而这个方程是个很标准的谐振子，
+                因此我们能直接得到解为
+                $$\delta_k(t)=Ae^{-i\omega t}+Be^{i\omega t}$$
+                因此密度反差的运动方程的解为
+                $$\delta(\textbf{r},t)=\int \,\frac{d^3k}{(2\pi)^3}\bigg[Ae^{-i(\omega t+\textbf{k}\cdot\textbf{r})}+Be^{i(\omega t-\textbf{k}\cdot\textbf{r})}\bigg]$$
+
+                \qquad
+                我们分析一下$\omega$,
+                不难发现当$\omega^2<0$时，
+                指数上会多出来一个虚数i，
+                这样会导致解变成
+                $$\delta_k(t)=Ae^{\beta t}+Be^{-\beta t}$$
+                使得密度反差最终会按照指数级增长或者减少，
+                这种情况被称之为引力的不稳定性。
+                所以当$\omega^2=0$的情况就成了一条分割线，
+                根据这个要求，
+                我们可以得到
+                $$k_J=\sqrt{\frac{\kappa\rho_0}{2c_s^2}}$$
+                同时可以定义Jeans波长和Jeans质量为
+                $\lambda_J\equiv\frac{2\pi}{k_j}$和$M_J\equiv\frac{4\pi\rho_0}{3}\biggl(\frac{\lambda_J}{2}\biggr)^3$
+                如果当扰动区域内的总质量大于Jeans质量时，
+                就会引起结团，
+                反之则只会引起声波的震荡而不能引起结团。
+                这一理论意味着引力趋于使密度增大的地方吸引更多的物质而使密度反差增加，
+                而压力则会把增大的密度向四周扩散，
+                因此，
+                是否结团取决于声波震荡是引力主导还是压力主导。
+            \end{multicols}
+        \end{frame}
+
+        \begin{frame}[fragile]
+            \frametitle{密度扰动的线性演化}
+            \framesubtitle{膨胀介质的密度扰动}
+            \begin{multicols}{2} 
+                \qquad
+                如果考虑宇宙膨胀的影响，
+                我们能得到
+                $$\ddot{\delta}_k+2\frac{\dot{a}(t)}{a(t)}\dot{\delta}_k+\biggl[c_s^2\biggl(\frac{k}{a(t)}\biggr)^2-\frac{\kappa\rho_0}{2}\biggr]\delta_k=0$$
+                在这里，
+                引力不稳定性判断的依据依然适用，
+                同时Jeans质量的概念同样适用，
+                但此处的Jeans质量会因为宇宙的膨胀而随时间变化。
+
+                \qquad
+                在这个方程中，
+                尺度因子$a(t)$、声速$c_s(t)$以及宇宙平均密度$\rho_0(t)$都会随着时间变化，
+                接下来可以考虑几个具体情况。
+                首先是高密度平坦宇宙$\Omega_M=1$，
+                以实物为主，
+                宇宙动力学给出$a(t)\varpropto t^{\frac{2}{3}}$。
+                若$k\ll k_J$，
+                我们则得到了
+                $$\ddot{\delta}_k+\frac{4}{3t}\dot{\delta}_k-\frac{2}{3t^2}\delta_k=0$$
+                可以解得
+                $$\delta_k=At^{\frac{2}{3}}+B\frac{1}{t}$$
+                结果表明扰动最终不是指数增长，
+                这是由于介质膨胀阻尼所导致的结果，
+                也意味着密度反差要增加一个量级，
+                宇宙的尺度也需要增大一个量级。
+
+                \qquad
+                接下来讨论低密度宇宙$\Omega_M\ll1$，
+                以曲率为主阶段，
+                有Friedmann方程我们能知道演化到后期，
+                基本可以视作$\Omega_{k}=1$(这里的k是曲率，并不是波速),
+                这时候$a(t)\varpropto t$，
+                同样在$k\ll k_J$的情况下有
+                $$\ddot{\delta}_k+\frac{2}{t}\dot{\delta}_k=0$$
+                解为$$\delta_k=A\frac{1}{t}+B$$
+                这也意味着扰动不能增长。
+
+                \qquad
+                最后说明下以辐射为主的阶段，
+                在Friedmann方程中我们提到过这时候尺度因子$a(t)\varpropto t^{\frac{1}{2}}$,
+                我们可以得到
+                $$\ddot{\delta}_k+\frac{1}{t}\dot{\delta}_k=0$$
+                解为
+                $$\delta_k=A\ln t+B$$
+                这个实际效果基本等于没有增长。
+
+            \end{multicols}
+        \end{frame}
+
+        \begin{frame}[fragile]
+            \frametitle{宇宙结构的形成}
+            \framesubtitle{重子物质为主的宇宙结构形成}
+            \begin{multicols}{2} 
+                \qquad
+                为了研究重子物质为主的宇宙中什么质量尺度的扰动能够增长而结成团，
+                我们可以通过考虑重子的Jeans质量计算而得。
+                在辐射为主的阶段，
+                也就是复合时期之前，
+                重子和光子耦合，
+                宇宙中等离子中的压强由光子提供。
+                随着重子密度占比的增加，
+                重子的Jeans质量随着宇宙膨胀增大，
+                在复合时期之后，
+                也就是物质为主的阶段，
+                重子物质和光子退耦，
+                此时的压强仅由H原子的热运动提供，
+                这也导致了Jeans质量骤然减小，
+                此后声速的进一步下降使得Jeans质量随着宇宙膨胀而减小。
+
+                \qquad
+                但这同时也留下了一个疑难，
+                在辐射为主的阶段，
+                重子物质的Jeans质量超过了视界内的重子物质总量，
+                因此星系质量尺度的扰动在进入视界后处于引力稳定区域，
+                扰动不会增长，
+                只有在物质为主的阶段，
+                星系质量大于Jeans质量，
+                重子物质扰动才有可能开始增长。
+                但由原初核合成的结果显示，
+                重子物质为主的宇宙是低密度宇宙，
+                后期是一个曲率为主的演化阶段，
+                而结果算出来这时期的扰动是无法增长的，
+                因此就形成了重子物质为主宇宙中的星系形成疑难，
+                密度反差要增加的量级和宇宙膨胀的量级相当，
+                可目前宇宙尺度因子也增加不过三个量级。
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=1\linewidth]{重子.png}  
+                    \caption{重子质量为主宇宙中的Jeans质量}
+                \end{figure}
+            \end{multicols}
+        \end{frame}
+
+        \begin{frame}[fragile]
+            \frametitle{宇宙结构的形成}
+            \framesubtitle{非重子暗物质为主的宇宙结构形成}
+            \begin{multicols}{2} 
+                \qquad
+                20世纪70年代出现了非重子暗物质的概念，
+                很快人们就认识到了其有助于解决重子物质为主宇宙中星系形成的疑难，
+                非重子暗物质没有和光子耦合，
+                因而扰动可以率先增长，
+                而在高密度宇宙中没有曲率为主的阶段，
+                扰动可以一直增长，
+                这样也就解决了疑难。
+
+                \qquad
+                非重子暗物质根据其退耦的运动速度分为冷暗物质和热暗物质，
+                热暗物质因其运动速度大，
+                可以弥散掉小尺度的密度扰动，
+                因此热暗物质为主宇宙中首先形成的是超团，
+                随后碎裂成星系团和星系。
+                热暗物质模型在大尺度上和观测很吻合，
+                能够解释空洞和纤维状结构，
+                但是在小尺度上和观测不符。
+
+                \qquad
+                而冷暗物质恰好相反，
+                在冷暗物质为主宇宙中，
+                小尺度扰动优先增长，
+                率先形成星系，
+                随后在引力的作用下成团形成星系和超团等。
+                冷暗物质模型在小尺度上符合得非常好，
+                能够解释星系内物质分布，
+                星系转动曲线和星系关联函数，
+                但在大尺度上和观测有些差距。
+
+                \qquad
+                结构形成理论要和测量比较还需要进行进一步的计算，
+                数值模型是一个必要的工作，
+                由于密度扰动演化后期会进入非线性阶段，
+                难以得到解析解，
+                因此我们需要依赖于超大型计算机去处理大量的自引力粒子体系和多种重子物质动力学过程。
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=1\linewidth]{大尺度结构.png}  
+                    \caption{Uchuu模拟效果图}
+                \end{figure}
+            \end{multicols}
+        \end{frame}
+
+        \begin{frame}[fragile]
+            \frametitle{密度扰动的非线性演化}
+            \framesubtitle{非线性坍缩模型}
+            \begin{multicols}{2} 
+                \qquad
+                最简单的非线性坍缩模型是球对称坍缩模型，
+                虽然实际上密度扰动并非是球对称的，
+                但该模型可以通过简单的计算而得到有意义的物理图像，
+                因此在研究非线性演化时被视为一种基本的模型。
+                基于球对称坍缩模型，
+                接下来要介绍的是Press-Schechter质量函数，
+                这个理论绕开了复杂的物理过程，
+                只从统计规律出发得到坍缩天体的数目随质量的分布及其时间演化。
+                Press-Schechter质量函数给出的是等级式成团模式的结果，
+                它表明质量越大的天体形成的时刻越晚。
+                Press-Schechter公式的结果和N体数值模拟的结果符合的非常好，
+                因而在非线性引力成团的理论分析中被广泛使用，
+                其缺点也十分明显，
+                本质上它是一种统计结果，
+                不能描述单个暗晕的演化细节。
+
+                \qquad
+                实际上的坍缩过程很少有严格球对称的，
+                非球对称或者椭球那样的扰动应该是绝大多数，
+                林家翘等人指出，
+                对于一个三轴椭球状的扰动来说，
+                坍缩不会成为一个点，
+                而是终结为一个准二维的平展结构，
+                通常也称之为薄饼模型。
+                Zel'dovich对此进行了研究，
+                并给出了近似的结果，
+                Zel'dovich近似表明了薄饼状结构是引力坍缩结构的一般形式，
+                这一结果在壳层交互发生之前都与N体数值模拟的结果一直符合得很好。
+
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=1\linewidth]{N体.png}  
+                    \caption{N体数值模拟效果图}
+                \end{figure}
+            \end{multicols}
+        \end{frame}
+
+
+        \begin{frame}[fragile]
+            \frametitle{密度扰动的非线性演化}
+            \framesubtitle{N体数值模拟}
+            \begin{multicols}{2} 
+                \qquad
+                密度扰动的非线性演化中，
+                实际发生的物理作用非常复杂，
+                演化过程的细节几乎不可能用解析的形式去准确描述，
+                而随着计算机的发展，
+                人们更多地去选择采取N体数值模拟的办法，
+                对大量点粒子的过程直接进行计算，
+                从而与观测结果相比较。
+
+                \qquad
+                N体数值模拟的基本思想就是取一个足够大的立方体盒子代表我们需要研究的宇宙，
+                在盒子中放置N个粒子，
+                让他们之间发生引力的相互作用。
+                由于是对宇宙进行模拟，
+                因此盒子越大，
+                粒子越多得到的效果越好。
+
+                \qquad
+                N体数值模拟实际上是把宇宙密度场用离散的粒子来代表，
+                通过计算粒子之间的相互作用来得出每个粒子的运动路径，
+                再用迭代的方式根据粒子的运动重新计算引力场的分布从而对运动路径进行修正，
+                最终时刻的粒子分布就代表了最后形成的宇宙结构，
+                这种计算方法称为粒子——粒子(PP)方法。
+
+                \qquad
+                PP方法会导致一个问题，
+                当两个粒子无限接近，
+                那么他们之间的引力也就会无限大，
+                这是数值无法处理的情况，
+                因此实际上PP方法会给粒子添加一些碰撞体积，
+                避免出现这种无穷的出现。
+                虽然如此，
+                但是PP方法的计算量依然很大，
+                尤其随着粒子数目N的增加，
+                计算的效率将急剧下降，
+                为了解决这两个问题，
+                人们提出了粒子——网格(PM)方法，
+                这种方法是将粒子分配到规划好的网格之中得到密度分布，
+                然后再通过求解Possion来求得引力势，
+                这会提高计算效率，
+                但也会导致新问题，
+                也就是分辨率并不高。
+
+                \qquad
+                为了提高分辨率，
+                现在常用的是粒子——粒子——粒子——网格($P^3M$)方法，
+                将PP和PM结合起来，
+                在长距离上用PM方法，
+                在断距离上用PP方法，
+                提高了计算效率的同时也保证了分辨率。
+                另外，
+                还有一种方法称为树法(tree codes)，
+                通过把远处的粒子团当作大质量粒子处理，
+                而近处的粒子则通过细分网格来细化处理，
+                这种方法能够增加引力的空间分辨率，
+                但计算中要占用大量内存。
+                最后还有一种方法是平滑粒子的流体动力学方法(SPH)，
+                将流体场作为粒子集合来处理，
+                不过总的来说，
+                SPH方法本质上还是基于粒子的方法来处理。
+
+                
+            \end{multicols}
+        \end{frame}
+        
+
+\section{附录}
+    \subsection{Doppler红移和Hubble定律}
+        \begin{frame}[fragile]
+            \frametitle{Doppler红移和Hubble定律}
+
+            \begin{multicols}{2} 
+                \hypertarget{附录1}{}  
+                \qquad   
+                考虑$\textbf{r}$处两沿$-\textbf{r}$方向朝$\textbf{0}$运动的光子，
+                两光子的发射的间隔为$\Delta t_1 $,
+                我们接受到的间隔为$\Delta t_0 $
+                因为沿测地线运动，
+                且沿着径向运动，
+                因此$ds^2$、$d\theta$和$d\varphi$都是0，
+                代入Robertson-Walker度规有$$dt^2-a^2(t)\frac{dr^2}{1-kr^2}=0$$
+                现在开根号后解这个微分方程我们有
+                $$\int_{t_1}^{t_0}\,\frac{dt}{a(t)}=\int_{0}^{r}\,\frac{dr}{\sqrt{1-kr^2}}$$
+                和
+                $$\int_{t_1+\Delta t_1}^{t_0+\Delta t_0}\,\frac{dt}{a(t)}=\int_{0}^{r}\,\frac{dr}{\sqrt{1-kr^2}}$$
+                联立二式我们可以得到$$\frac{\Delta t_0}{\Delta t_1}=\frac{a(t_0)}{a(t_1)}$$
+                又由于波长、频率和速度的关系，
+                我们可以得到$$\frac{\lambda_0}{\lambda_1}=\frac{a(t_0)}{a(t_1)}$$
+                若我们定义红移$z\equiv\frac{\lambda_0-\lambda_1}{\lambda_1} $
+                则有$$1+z=\frac{a(t_0)}{a(t_1)}$$
+                Doppler效应$\lambda_{obs}=\lambda(1\pm \frac{v}{c})\gamma $给出的红移为$$z=\sqrt{\frac{c+v}{c-v}}-1$$
+                由此在$v\ll c$时可推出$$v=cz$$
+
+            \end{multicols}
+
+        \end{frame}
+
+        \begin{frame}[fragile]
+            \frametitle{Doppler红移和Hubble定律}
+            \begin{multicols}{2}
+                \begin{figure}[h]
+                    \centering  
+                    \includegraphics[width=1\linewidth]{尺度因子.png}  
+                    \caption{尺度因子决定了宇宙的膨胀} 
+                \end{figure}
+                \begin{figure}[h]
+                    \centering  
+                    \includegraphics[width=1\linewidth]{Doppler效应.png}  
+                    \caption{Doppler效应展示图} 
+                \end{figure}
+            \end{multicols}
+        \end{frame}
+
+        \begin{frame}[fragile]
+            \frametitle{Doppler红移和Hubble定律}
+                \qquad
+                在上面推导的过程中，
+                我们有得到了两个公式
+                $$\int_{t_1}^{t_0}\,\frac{dt}{a(t)}=\int_{0}^{r}\,\frac{dr}{\sqrt{1-kr^2}}$$
+                和$$1+z=\frac{a(t_0)}{a(t_1)}$$
+                我们对其中的$\frac{1}{a(t)}$进行Taylor展开
+                $$\frac{1}{a(t)}=\frac{1}{a(t_0)}-\frac{\dot{a}(t_0)}{a^2(t_0)}(t-t_0)+(\frac{\dot{a}^2(t_0)}{a^3(t_0)}-\frac{1}{2}\frac{\ddot{a}(t_0)}{a^2(t_0)})(t-t_0)^2+\ldots $$
+                随后我们定义$H_0\equiv\frac{\dot{a}(t_0)}{a(t_0)}$和$q_0\equiv-\ddot{a}(t_0)\frac{a(t_0)}{\dot{a}^2(t_0)}$
+                再将其代入积分之中可以得到
+                $$\frac{1}{a(t_0)}\int_{t_1}^{t_0}\,\bigg[1-H_0(t-t_0)+(1+\frac{q_0}{2}){H_0}^2(t_0-t)^2+\ldots\bigg]dt=r+O(r^3)$$
+                
+
+        \end{frame}
+        \begin{frame}[fragile]
+            \frametitle{Doppler红移和Hubble定律}
+                \qquad
+                上面我们得到了
+                $$r=\frac{1}{a(t_0)H_0}\bigg[(t_0-t_1)+\frac{1}{2}H_0(t_0-t_1)^2\bigg]$$
+                又对$z$进行Taylor展开有
+                $$z=H_0(t_0-t_1)+(1+\frac{q_0}{2}){H_0}^2(t_0-t_1)^2+\ldots$$
+                这里如果我们利用一阶近似解回代可以得到一个$(t_0-t_1)$的近似解
+                $$(t_0-t_1)=\frac{1}{H_0}\bigg[z-(1+\frac{q_0}{2}z^2+\ldots)\bigg]$$
+                将其代入最后可得
+                $$r=\frac{1}{a(t_0)H_0}\bigg[z-(1+\frac{q_0}{2}z^2+\ldots)\bigg]$$
+                如果只保留一阶项，
+                略去二阶及以上的小量，
+                并取$a=1$
+                就能得到Hupple定律(上面推导过程采取的是自然坐标系)
+                $$cz=H_0d$$
+
+        \end{frame}
+
+    \subsection{Robertson-Walker度规的推导}
+        \begin{frame}[fragile]
+            \frametitle{Robertson-Walker度规的推导}
+
+            \begin{multicols}{2} 
+                \hypertarget{附录2}{}  
+                \qquad   
+                度规在广义相对论中用以定义相邻两点之间的距离
+                $$ds^2=g_{\mu\nu}dx^{\mu}dx^{\nu}$$
+                例如三维欧式空间，
+                它的线元有(这里采用了Einstein求和约定)
+                $$ds^2=dx^{i}dx^{i}$$
+                那么显然有
+                $$g_{ij}=\delta_{ij}$$
+                用矩阵的形式写出来就是
+                $$g_{ij}=
+                \begin{bmatrix}
+                    1 & 0 & 0\\
+                    0 & 1 & 0\\
+                    0 & 0 & 1
+                \end{bmatrix}
+                $$
+                对于狭义相对论的Minkowski时空，
+                要求
+                $$ds^2=dt^2-dx^{i}dx^{i}$$
+                则度规可以写成
+                $$g_{\mu\nu}=
+                \begin{bmatrix}
+                    1 & 0 & 0 & 0\\
+                    0 & -1& 0 & 0\\
+                    0 & 0 & -1& 0\\
+                    0 & 0 & 0 & -1
+                \end{bmatrix}
+                $$
+            \end{multicols}
+        \end{frame}
+        \begin{frame}[fragile]
+            \frametitle{Robertson-Walker度规的推导}
+            \begin{multicols}{2}  
+                \qquad   
+                接着我们讨论二维球面空间中的距离，
+                虽然之后会引入3维坐标，
+                但是对象依然是一个二维空间，
+                因为我们会有一个约束方程来使得整个系统减少一个自由度，
+                因此只有两个广义坐标。
+
+                \qquad
+                以$R$为半径的二维球面的方程为
+                $$x^ix^i=R^2$$
+                而由于二维球面也属于欧式三维空间，
+                因此可以用欧式三维空间的距离来表示其球面上的距离
+                $$ds^2=dx^idx^i$$
+                这里我们对球面方程进行换元处理得到
+                $$x^3=\sqrt{{R}^2-{x^2}{x^2}-{x^1}{x^1}}$$
+                做微分后代入可得
+                $$ds^2=dx^1dx^1+dx^2dx^2+\frac{x^1dx^1+x^2dx^2}{{R}^2-{x^2}{x^2}-{x^1}{x^1}}$$
+                这时候利用极坐标$x^1=r'cos\theta$、$x^2=r'sin\theta$和$r=\frac{r'}{R}$转换下表示为
+                $$ds^2=R^2\biggl(\frac{dr^2}{1-r^2}+r^2d\theta^2\biggr)$$
+                这表示二维球面的度规为
+                $$g_{ij}=
+                \begin{bmatrix}
+                    R^2\frac{1}{1-r^2} & 0 \\
+                    0                  & R^2r^2 
+                \end{bmatrix}
+                $$
+                通过类比二维球面，
+                我们可以得到四维欧式空间中的三维球面和四维欧式空间中的距离得到
+                $$ds^2=R^2\biggl(\frac{dr^2}{1-r^2}+r^2d\theta^2+r^2sin^2\theta d\varphi^2\biggr)$$
+            \end{multicols}
+        \end{frame}
+        \begin{frame}[fragile]
+            \frametitle{Robertson-Walker度规的推导}
+            \begin{multicols}{2} 
+                \qquad
+                度规是$3\times 3$的矩阵，
+                可以替代掉Minkowski时空中度规的空间部分，
+                得到Robertson-Walker度规在$k=1$时候的形式
+                $$g_{\mu \nu}=
+                \begin{bmatrix}
+                    1  &             0         &   0       &  0   \\
+                    0   &   -R^2\frac{1}{1-r^2}  &   0       &  0   \\
+                    0   &   0                   &   -R^2r^2  &  0   \\
+                    0   &   0                   &   0       &  -R^2r^2sin^2\theta
+                \end{bmatrix}
+                $$
+                而在这个度规中规范的时空中距离为
+                $$ds^2=dt^2-R^2\biggl(\frac{dr^2}{1-r^2}+r^2d\theta^2+r^2sin^2\theta d\varphi^2\biggr)$$
+                这个度规表明宇宙是一个封闭的球面，
+                而而这个球面处于四维欧式空间中，
+                由三维欧式空间中的性质我们可以得知四维欧式空间中依然具有平移对称性和旋转对称性，
+                这意味着属于四维欧式空间中的三维球面也应具有这种性质，
+                符合宇宙学原理。
+                而同时为了表示宇宙的膨胀，
+                物理图像可以很形象地表示为球面半径的扩大，
+                我们只需要令$R=R(t)$便可满足这个要求，
+                另外我们也可以直接令$a(t)=R(t)$用膨胀因子来表示宇宙的球面半径。
+            \end{multicols}
+        \end{frame}
+    \subsection{广义相对论}
+        \begin{frame}[fragile]
+            \frametitle{广义相对论}
+            \begin{multicols}{2} 
+                \hypertarget{附录3}{}  
+                \qquad
+                为了能理解Friedmann方程的推导，
+                我们需要稍微掌握一些必要的广义相对论的知识以及运算方法，
+                首先就是理解张量。
+                如果一个量在变换下能满足如下规律，
+                我们则将其称之为张量
+                $${T'}^{\alpha \dots\beta}_{\mu\dots\nu}=
+                \frac{\partial x'^{\alpha}}{\partial x^{\gamma}}
+                \dots
+                \frac{\partial x'^{\beta}}{\partial x^{\zeta}}
+                \frac{\partial x^{\rho}}{\partial x'^{\mu}}
+                \dots
+                \frac{\partial x^{\sigma}}{\partial x'^{\nu}}
+                T^{\gamma\dots\zeta}_{\rho \dots\sigma }$$
+                张量有以下性质
+                $$T^{\mu}=T^{\mu\nu}_{\nu}=A^{\mu\nu}B_{\nu}=E^{\mu}A^{\alpha}B_{\alpha}=CE^{\mu}$$
+                其中包含了张量的乘法、指标缩并、标积以及Einstein求和约定，
+                重复指标代表求和，
+                而重复指标也叫傀标，
+                可以任意替换。
+                
+                \qquad
+                张量也具有对称性，
+                如果$$T_{\mu\nu}=T_{\nu\mu}$$
+                那么这就是个对称张量，
+                如果$$T_{\mu\nu}=-T_{\nu\mu}$$
+                那么这就是个反称张量。
+                同时如果指标都在上面，
+                那么就称之为协变张量，
+                如果指标都在下面，
+                那么就是逆变张量，
+                如果上下都有，
+                那就是混合张量，
+                张量的阶数由指标的数量决定。
+
+                \qquad
+                紧接着张量的是联络，
+                由于张量是逐点定义的，
+                所以不同点之间的张量无法直接进行运算，
+                所以我们需要引入联络和张量的平移，
+                使得两个不同点的张量最后处于同一个点，
+                这样我们也才能对其进行微分运算。
+                在平移的过程中会产生增量，
+                这个增量我们记为
+                $$\delta A_{\mu}(P)\equiv A_{\mu}(P\to Q)-A_{\mu}(P)=\varGamma ^{\alpha}_{\mu\nu}A_{\alpha}dx^{\nu}$$
+                其中的$\varGamma ^{\alpha}_{\mu\nu}$称之为联络，
+                需要注意的是，
+                联络不是张量。
+            \end{multicols}
+        \end{frame}
+        \begin{frame}[fragile]
+            \frametitle{广义相对论}
+            \begin{multicols}{2} 
+                \qquad
+                有了联络的概念我们现在就可以引入微分运算了，
+                对于0阶张量，
+                其特性和标量的微分是一样的
+                $$\partial_{\mu}U\equiv\frac{\partial U(x^{\mu})}{\partial x^{\mu}}$$
+                但对于1阶及以上的张量，
+                普通微商是对空间中不同两点进行操作的，
+                因此得到的结果不会是张量，
+                不会具有张量的性质，
+                所以我们需要引入协变微商。
+                首先是协变矢量的普通微商的定义
+                $$\partial_{\nu}A_{\mu}\equiv\frac{\partial A_{\mu}}{\partial x^{\nu}}=\lim_{Q\to P}\frac{A_{\mu}(Q)-A_{\mu}(P)}{\Delta  x^{\nu}}$$
+                随后定义协变矢量的协变微商
+                $$D_{\nu}A_{\mu}\equiv\lim_{Q\to P}\frac{A_{\mu}(Q)-A_{\mu}(P\to Q)}{\Delta  x^{\nu}}$$
+                再将联络代入可得
+                $$D_{\nu}A_{\mu}=\partial_{\nu}A_{\mu}-\varGamma ^{\alpha}_{\mu\nu}A_{\alpha}$$
+                对于标量而言，
+                不难证明有
+                $$\partial_{\mu}U=D_{\mu}U$$
+                同时，
+                普通微商和协变微商都遵循Leibniz法则
+                即$$\partial_{\alpha}(A^{\mu}B_{\mu})=(\partial_{\alpha}A^{\mu})B_{\mu}+A^{\mu}\partial_{\alpha}B_{\mu}$$
+                和$$D_{\alpha}(A^{\mu}B_{\mu})=(D_{\alpha}A^{\mu})B_{\mu}+A^{\mu}D_{\alpha}B_{\mu}$$
+                通过这个我们也能得到逆变矢量的协变微商
+                $$D_{\nu}A^{\mu}=\partial_{\nu}A^{\mu}+\varGamma ^{\mu}_{\alpha\nu}A^{\alpha}$$
+                对于更高阶的张量，
+                我们也可以通过Leibniz法则和张量乘法来得到其对应的协变微商。
+            \end{multicols}
+        \end{frame}
+        \begin{frame}[fragile]
+            \frametitle{广义相对论}
+            \begin{multicols}{2} 
+                \qquad
+                如果对一个协变矢量场连续做两次协变微商，
+                我们并不能保证的两次协变微商的顺序是可交换的，
+                通过计算可以得到
+                $$D_{\nu}D_{\mu}A_{\alpha}-D_{\mu}D_{\nu}A_{\alpha}=R^{\beta}_{\alpha\mu\nu}
+                A_{\beta}-2\varGamma^{\beta}_{[\mu\nu]}D_{\beta}A_{\alpha}$$
+                其中
+                $$R^{\beta}_{\alpha\mu\nu}=D_{\mu}\varGamma^{\beta}_{\alpha\nu}-
+                D_{\nu}\varGamma^{\beta}_{\alpha\mu}+\varGamma^{\beta}_{\rho\mu}\varGamma^{\rho}_{\alpha\nu}
+                -\varGamma^{\beta}_{\rho\nu}\varGamma^{\rho}_{\alpha\mu}$$
+                称之为曲率张量
+                而
+                $$\varGamma^{\beta}_{[\mu\nu]}=\frac{1}{2}(\varGamma^{\beta}_{\mu\nu}-\varGamma^{\beta}_{\nu\mu})$$
+                称之为挠率张量。
+
+                \qquad
+                曲率张量有两个重要的性质，
+                首先是后一对指标是反称的(前一对指标并不一定就是对称的)
+                $$R^{\beta}_{\alpha\mu\nu}=-R^{\beta}_{\alpha\nu\mu}$$
+                因此曲率张量有两种独立的缩并方式
+                $$R^{\alpha}_{\alpha\mu\nu}=A_{\mu\nu}$$
+                和
+                $$R^{\mu}_{\alpha\mu\nu}=R_{\alpha\nu}$$
+
+                \qquad
+                上面第二项我们可以称之为Ricci张量，
+                是对称的
+                $$R_{\mu\nu}=R^{\alpha}_{\mu\alpha\nu}=R_{\nu\mu}$$
+                又度规可以升降指标与缩并指标，
+                即$$g_{\mu\nu}A^{\nu}=A_{\mu}$$
+                和$$g^{\mu\nu}A_{\nu}=A^{\mu}$$
+                我们可以定义曲率标量
+                $$R\equiv g^{\mu\nu}R_{\mu\nu}=R^{\mu}_{\mu}$$
+                同时也可以定义Einstein张量
+                $$G_{\mu\nu}\equiv R_{\mu\nu}-\frac{1}{2}g_{\mu\nu}R$$
+
+                
+            \end{multicols}
+        \end{frame}
+
+        \begin{frame}[fragile]
+            \frametitle{广义相对论}
+                \qquad
+                在正式得到场方程之前，
+                我们需要得到联络和度规的关系。
+                在无挠空间中，
+                联络是对称的，
+                如果矢量长度具有平移不变性，
+                那么就能唯一确定联络和度规的关系，
+                我们将这种完全由度规确定的联络称之为Christoffel符号，
+                简称为克氏符。
+
+                \qquad
+                现在我们来证明这点，
+                假如平移不会改变矢量长度
+                $$g_{\mu\nu}(Q)A^{\mu}(P\to Q)A^{\nu}(P \to Q)=g_{\mu\nu}(P)A^{\mu}(P)A^{\nu}(P)$$
+                其中有
+                $$g_{\mu\nu}(Q)=g_{\mu\nu}(P)+\partial_{\alpha}g_{\mu\nu}(P)dx^{\alpha}$$
+                代入便可得到
+                $$\partial_{\alpha}g_{\mu\nu}-g_{\beta\nu}\varGamma^{\beta}_{\mu\alpha}
+                -g_{\mu\beta}\varGamma^{\beta}_{\nu\alpha}=0$$
+                通过轮换指标再整理下可得
+                $$\varGamma^{\beta}_{\mu\nu}=\frac{1}{2}g^{\beta\alpha }(
+                    \partial_{\nu}g_{\mu\alpha}+\partial_{\mu}g_{\nu\alpha}-\partial_{\alpha}g_{\mu\nu}
+                )$$
+                这也就是联络和度规的关系，
+                如果我们知道了度规，
+                那我们也就知道了联络，
+                相应的我们也能知道Ricci张量、曲率标量和Einstein张量。
+
+        \end{frame}
+        \begin{frame}[fragile]
+            \frametitle{广义相对论}
+
+                \qquad
+                现在我们可以引入广义相对论的核心，
+                也就是Einstein场方程，
+                其核心思想在于认为物质场的能动张量$T_{\mu\nu}$和时空几何的张量$M_{\mu\nu}$存在某种联系，
+                而这个联系也十分直接，
+                表现为一种线性关系
+                $$M_{\mu\nu}=\kappa T_{\mu\nu}$$
+                这里的$\kappa$是一个常数，
+                其值与引力常数$G$有关
+                $$\kappa=8\pi G$$
+
+                \qquad
+                考虑到能动张量是守恒的
+                $$D_{\nu}T^{\mu\nu}=0$$
+                这也就意味着同样会有
+                $$D_{\nu}M^{\mu\nu}=0$$
+                而恰好我们能推出Einstein张量满足Bianchi恒等式
+                $$D_{\nu}G^{\mu\nu}=0$$
+                那么我们也就得到了
+                $$R_{\mu\nu}-\frac{1}{2}R=\kappa T_{\mu\nu}$$
+                这就是著名的Einstein场方程。
+
+        \end{frame}
+    \subsection{Friedmann方程的推导}
+        \begin{frame}[fragile]
+            \frametitle{Friedmann方程的推导}
+                \hypertarget{附录3}{} 
+                \qquad   
+                为了简洁便于理解，
+                我们只推导平直宇宙(k=0)的Friedmann方程。
+                在之前的Robertson-Walker度规中有提到过，
+                我们在k=0的时候就是球坐标系下的欧式空间乘上了一个膨胀因子，
+                这里我们采取直角坐标，
+                以方便我们的推导。
+
+                \qquad
+                首先就是Robertson-Walker度规的直角坐标系的形式
+                $$g_{\mu\nu}=
+                \begin{bmatrix}
+                    1 & 0 & 0 & 0\\
+                    0 & -a^2(t)& 0 & 0\\
+                    0 & 0 & -a^2(t)& 0\\
+                    0 & 0 & 0 & -a^2(t)
+                \end{bmatrix}
+                $$
+                可以得到
+                $$g_{00}=1$$
+                $$g_{ii}=-a^2(t)$$
+                我们通过$$g^{\mu\rho}g_{\rho\nu}=\delta^{\mu}_{\nu}$$得到
+                $$g^{00}=1$$
+                $$g^{ii}=-\frac{1}{a^2(t)}$$
+                接着求克氏符(也就是联络)有
+                $$\varGamma^0_{ii}=a\dot{a}$$
+                $$\varGamma^i_{i0}=\varGamma^i_{0i}=H$$
+        \end{frame}
+        \begin{frame}[fragile]
+            \frametitle{Friedmann方程的推导}
+            \begin{multicols}{2}
+                \qquad   
+                有了联络，
+                我们也就能求得Ricci张量和曲率标量
+                $$R_{00}=-3(\dot{H}+H^2)$$
+                $$R_{ii}=a^2(t)(\dot{H}+3H^2)$$
+                $$R=-6(\dot{H}+2H^2)$$
+                根据Ricci张量可以得到Einstein张量
+                $$G_{00}=3H^2=T_{00}$$
+                $$G_{ii}=-(2\dot{H}+3H^2)=T_{ii}$$
+                又静止的理想流体的能动张量为
+                $$T^{\mu}_{\nu}=
+                \begin{bmatrix}
+                    \rho & 0 & 0 & 0\\
+                    0 & -P& 0 & 0\\
+                    0 & 0 & -P& 0\\
+                    0 & 0 & 0 & -P
+                \end{bmatrix}
+                $$
+                即
+                $$T_{\mu\nu}=g_{\mu\alpha}T^{\alpha}_{\nu}=
+                \begin{bmatrix}
+                    \rho & 0 & 0 & 0\\
+                    0 & \frac{P}{a^2(t)}& 0 & 0\\
+                    0 & 0 & \frac{P}{a^2(t)}& 0\\
+                    0 & 0 & 0 & \frac{P}{a^2(t)}
+                \end{bmatrix}
+                $$
+                所以我们得到了$$H^2=\frac{\kappa\rho}{3}$$
+                这就是Friedmann方程，
+                如果场方程中有宇宙常数项，
+                我们则在其后添加即可。
+            \end{multicols}
+        \end{frame}
+
+    
+
+
+
+
+\tiny
+
+\scriptsize
+
+\footnotesize
+
+\small
+
+\normalsize
+
+\large
+
+\Large
+
+\huge
+
+\Huge
+
+\end{document}
